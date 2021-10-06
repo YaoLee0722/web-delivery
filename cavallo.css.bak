@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+*{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	background-color: rgb(27,27,27);
+	overflow-x:hidden;
+}
+.header{
+	height:90vh;
+	position: relative;
+}
+.navbar{
+	font-family: 'Balsamiq Sans', cursive , san-serif;
+	height: 120px;
+	width:100%;
+	background-color:black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px;
+	z-index:10;
+	position: fixed;
+}
+.navbar-box{
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	color:white;
+}
+.logo1 {
+	padding-right: 5%;
+}
+.logo1 img{
+	width: 190px;
+	height: 95px
+}
+.heading-tertiary{
+	font-size: 3.5rem;
+}
+.navbar-list{
+	list-style: none;
+	font-size: 2rem;
+}
+.navbar-item{
+	display: inline-block;
+}
+.navbar-link:visited,
+.navbar-link:link{
+	text-decoration:none;
+	color:white;
+	padding: 3rem;
+	transition: all .5s ease;
+}
+
+.navbar-link:hover{
+	background-color:#fea680;
+	color: white;
+	border-radius: 70px;
+}
+.navbar-link-Order:visited,
+.navbar-link-Order:link{
+	text-decoration: none;
+	color:white;
+	padding:  2rem 3.5rem;
+	border: 1px solid #fedc3d; /*should be same as 	"background-color:" in .navbar-link-Order:hover */
+	border-radius: 200px;
+	box-shadow: 0 0 3rem rgba(255,255,255, .5);
+	transition: all .4s ease;
+}
+.navbar-link-Order:hover{
+	background-color: #fedc3d;
+	color: white;
+}
+.toggle{
+	height: 5rem;
+	width: 5rem;
+	display:none;
+}
+.toggle div{
+	height: 4px;
+	width: 100%;
+	background-color: white;
+	margin: 1rem;
+}
+.header-container{
+	width:100%;
+	height:100%;
+	background-size:cover;
+	color:white;
+}
+.video{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,.4);
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+#video{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	position: relative;
+	z-index: -1;
+}
+.header-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align:center;
+	text-transform: uppercase;
+	color: white;
+}
+.heading-primary{
+	font-family: 'Playfair Display SC', serif;
+	font-size: 6rem;
+	font-weight:600;
+	letter-spacing:3px;
+}
+#bold{
+	color: #fedc3d;
+	font-weight:800;
+	font-size: 8rem;
+}
+.lead{
+	font-size: 1.9rem;
+	font-weight: 600;
+	letter-spacing: 4px; 
+}
+.order-now:visited,
+.order-now:link{
+	text-decoration: none;
+	display: inline-block;
+	color:white;
+	font-size: 2rem;
+	padding: 2rem;
+	margin-top: 4rem;
+	border: 1px solid white;
+	border-radius: 100px;
+	transition: all .3s ease;
+	box-shadow: 0 1rem 1rem rgba(240,107,55, .1);
+	text-shadow: 0 1rem 1rem rgba(0,0,0, .6);
+}
+.order-now:hover{
+	background-color: #fedc3d;		 /*should be same as 	"background-color:" in .navbar-link-Order:hover */
+	border: 1px solid white;
+	box-shadow: 0 0 15rem #fea680; 
+}
+
+/******************menu******************/
+.menu{
+	width:100%;
+	padding: 10rem 5rem;
+	background-image: linear-gradient(to left top, #fea680, #01abaa); 
+}
+.menu-h{
+	font-family: 'Playfair Display SC', serif;
+	font-size: 12rem;
+	text-align: center;
+	text-shadow:0 0 4rem #fedc3d;
+	text-transform: uppercase;
+	color: white;
+	font-weight:800;
+}
+.menu-g{
+	display: grid;
+	grid-template-rows: repeat(2 , 1fr);
+	grid-template-columns: repeat(4 , 1fr);
+	justify-self:center;
+	grid-gap: 2rem;
+}
+.menu-hold{
+	font-family: Tahoma, sans-serif;
+}
+.menu-container{
+	width:100%;
+	height:50rem;
+	background-color: white;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 0 2rem white;
+}
+.menu-container:hover{
+	box-shadow: 0 0 2rem #000000;
+	transform: scale(1.07);
+}
+.menu-p{
+	font-size: 1.4rem;
+	padding: 1rem;
+	text-align: center;
+}
+.img-RumAndRaisin{
+	height: 50%;
+	width: 100%;
+	background-size: cover;
+	background-position: left;
+	background-image: url(RumRaisin.jpg);
+}
+.menuRumAndRaisin{
+	padding-top:2rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.img-Chocolate{
+	height: 50%;
+	width: 100%;
+	background-size: cover;
+	background-position: left;
+	background-image: url(Chocolate.jpg);
+}
+.menuChocolate{
+	padding-top:2rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.img-HoneyComb{
+	height: 50%;
+	width: 100%;
+	background-size: cover;
+	background-position: left;
+	background-image: url(HoneyComb.jpg);
+}
+.menuHoneyComb{
+	padding-top:2rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.img-PlainVanilla{
+	height: 50%;
+	width: 100%;
+	background-size: cover;
+	background-position: left;
+	background-image: url(PlainVanilla.jpg);
+}
+.menuPlainVanilla{
+	padding-top:2rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.img-DairyFreePlainVanilla{
+	height: 50%;
+	width: 100%;
+	background-size: cover;
+	background-position: left;
+	background-image: url(DairyFreePlainVanilla.jpg);
+}
+.menuDairyFreePlainVanilla{
+	padding-top:2rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.img-SaltedCaramel{
+	height: 50%;
+	width: 100%;
+	background-size: cover;
+	background-position: left;
+	background-image: url(SaltedCaramel.jpg);
+}
+.menuSaltedCaramel{
+	padding-top:2rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.img-Strawberry{
+	height: 50%;
+	width: 100%;
+	background-size: cover;
+	background-position: left;
+	background-image: url(Strawberry.jpg);
+}
+.menuStrawberry{
+	padding-top:2rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.img-Mint{
+	height: 50%;
+	width: 100%;
+	background-size: cover;
+	background-position: left;
+	background-image: url(Mint.jpg);
+}
+.menuMint{
+	padding-top:2rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.img-Cherry{
+	height: 50%;
+	width: 100%;
+	background-size: cover;
+	background-position: left;
+	background-image: url(Cherry.jpg);
+}
+.menuCherry{
+	padding-top:2rem;
+	font-size: 3rem;
+	text-align: center;
+}
+/**************************Step Two (group flag)*****************************/
+/******************My account and Map******************/
+.MyAccount{
+	padding:15rem 10rem;
+	width: 100%;
+	background-color: #797a7c;
+	background-image: url("background.jpg");
+	background-size:cover;
+}
+.MyAccount-content{
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border-radius: 10px;
+}
+.left{
+	width: 100%;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	background-color: #01abaa;
+}
+.right{
+	width: 100%;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	position:relative;
+	background-color: #fea680;
+}
+.MyAccount-form{
+	padding: 5rem;
+	width: 100%;
+}
+.form{
+	width: 100%;
+	text-align: center;
+	padding: 3rem 0;
+}
+.form-group{
+	position: relative;
+	padding: 2rem;
+	width: 100%;
+}
+.MyAccount-heading{
+	font-family: 'Playfair Display SC', serif;
+	font-size: 6rem;
+	color:  #01abaa;
+	text-align: center;
+	text-shadow: 0 0 0.1rem white;
+	margin-bottom: 20%;
+}
+
+.ma-b:link,
+.ma-b:visited{
+	font-family: 'Balsamiq Sans', cursive , san-serif;
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid #797a7c;
+	background-color: black;
+	color: white;
+	outline: none;
+	font-size:2.5rem;
+	border-radius: 10px;
+	margin: 2rem;
+	padding: 1rem 2rem;
+	transition: all .5 ease;
+}
+.ma-b:hover{
+	background-color: #fedc3d;		
+	border: 1px solid white;
+	box-shadow: 0 0 9.2rem white;
+}
+.input{
+	width:95%;
+	outline:none;
+	border:1px solid #b2d338;
+	background-color: #fff;
+	height: 7rem;
+	font-size: 2rem;
+	border-radius: 1000px;
+	text-indent: 5px;
+	box-shadow: 0 0 1rem rgba(0,0,0,.2);
+	padding: 1rem;
+	transition: all .6s ease;
+}
+.input:focus{
+	width 100%;
+}
+.input:valid{
+	border-left: 10px solid #1cf404;
+	border-right: 10px solid #1cf404;
+}
+.input:invalid{
+	border-left: 10px solid #ff0000;
+	border-right: 10px solid #ff0000;
+}
+.form-group label{
+	position: absolute;
+	top : 52px;
+	left: 58px;
+	font-size: 1.6rem;
+	background-color: white;
+	visibility: hidden;
+	transition: top .8s ease, left .8s ease;
+}
+.input:focus ~ label{
+	top: 10px;
+	left: 60px;
+	padding: 0 1rem;
+	box-shadow: 0 0 1.1rem rgba(0,0,0,.4);
+	visibility: visible;
+	border-radius: 10px;
+}
+.input:focus::placeholder{
+	color: transparent;
+}
+.left{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.mapheading{
+	font-family: 'Playfair Display SC', serif;
+	font-size: 6rem;
+	color: #f8aa79;
+	text-align:center;
+	text-shadow: 0 0 .1rem white;
+}
+/**************Footer****************/
+.footer{
+	font-family: Garamond, serif;
+	width: 100vw;
+	display: flex;
+	overflow: hidden;
+	padding: 55px 0;
+	box-sizing: border-box;
+	background-color: black;
+	color:white;
+}
+.footer > *{
+	flex: 1 100%;
+}
+.footer-Cavallo{
+	font-size: 1.4rem;
+	margin-right:1.25em;
+	margin-bottom: 2em;
+	margin-left: 3em;
+}
+.footerlogo img{
+	width: 55%;
+	height: auto;
+	padding-bottom: 1.5rem;
+}
+h2{
+	font-weight:600;
+	font-size: 2.6rem;
+	padding-bottom: 1.75rem;
+}
+.footer ul{
+	list-style: none;
+	padding-left:0;
+}
+.footer ul img{
+	height: 25px;
+	width: 25px;
+	padding-right: 1%;
+	margin-top: -10px;
+}
+.footer li{
+	font-size: 1.3rem;
+	line-height: 2em;
+	padding-left: 15px;
+}
+.footer a{
+	text-decoration: none;
+}
+.footer-NewcastleUni{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+}
+.footer-NewcastleUni > *{
+	flex: 1 50%;
+	margin-right: 1.25em;
+}
+.box a{
+	color: #b2d338;
+}
+.footer-Cavallo p{
+	padding-right: 20%;
+	color: white;
+	padding-bottom: 3%;
+}
+.SocialMedia img{
+	width:50px;
+	height: 50px;
+	display: inline-block;
+	margin-right: 10px;
+}
+/******* small screen*********/
+@media screen and (max-width: 940px){
+.video{
+	padding-top: 250px;
+}
+.header-box{
+	padding-top: 250px;
+}
+.navbar{
+	height:250px;
+	padding: 0;
+}
+.navbar-list{
+	display : block;
+}
+.navbar li:last-child{
+	padding:2rem 0 0 1rem;
+}
+.heading-primary{
+	font-size: 2rem;
+}
+.lead{
+	font-size:1.2rem;
+	padding-top:10px;
+}
+.navbar-item{
+	padding:0.5rem 0 0.5rem 0;
+}
+
+.menu{
+	padding: 0 0 0 0;
+}
+.menu-h{
+	padding-top:1rem;
+	padding-bottom:2rem;
+	font-size: 8rem;
+}
+.menu-g{
+	grid-template-columns: repeat(1 , 1fr);
+}
+.menu-g:last-child{
+	padding-bottom:3rem;
+}
+.menu-container{
+	width:80%;
+	margin: 0 auto 0 auto;
+}
+.menuSaltedCaramel{
+	font-size: 2rem;
+}
+.MyAccount{
+	padding:0;
+}
+.MyAccount-content{
+	display: inline-block;
+	padding: 0;
+}
+.MyAccount-info{
+	width:100vw;
+}
+.MyAccount-form{
+	padding: 0;
+}
+.left{
+	display:inline-block;
+	width:127vw;
+	margin-left: 0;
+	padding: 5rem 0 5rem 0;
+}
+.iframe{
+	width: 80vw;
+	margin-left: 5rem;
+}
+}
+/*other settings for small screens*/
+@media screen and (min-width: 600px){
+	.footer-NewcastleUni > *{
+		flex: 1;
+	}
+	.footer-Cavallo{
+		flex: 1 0px;
+	}
+	.footer-NewcastleUni{
+		flex: 2 0px;
+	}
+}
+@media (max-width: 600px){
+	.footer{
+		padding: 15px;
+	}
+	main{
+		font-size: 55px;
+	}
+}
+/**************************Step Two (group flag)*****************************/
